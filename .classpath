@@ -22,6 +22,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Ebenezer/Downloads/bluecove-2.1.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/Users/BrendanKing/Downloads/bluecove-2.1.1-SNAPSHOT.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

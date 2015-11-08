@@ -1,6 +1,10 @@
 package emo_capture.emo_capture;
 
 import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
 
 import com.github.sarxos.webcam.Webcam;
 
@@ -9,6 +13,7 @@ public class Capture {
 	
     public Capture() {
     	this.webcam = Webcam.getDefault();
+    	System.out.print("Found Webcam");
     }
     
     public void getName() {
@@ -20,6 +25,17 @@ public class Capture {
     }
     public BufferedImage image() {
     	return webcam.getImage();
+    }
+    
+    public boolean writeImage(String filepath) throws Exception {
+    	BufferedImage i = this.image();
+		try {
+			ImageIO.write(i, "PNG", new File(filepath));
+			return true;
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			throw e;
+		}
     }
     
 }
