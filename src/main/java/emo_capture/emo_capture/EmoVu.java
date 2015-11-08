@@ -61,7 +61,7 @@ public class EmoVu {
 			
 		//obj is (hopefully) a String, but could be something else	
 		} else {
-			result.put(key, (Double) obj);
+			result.put(key, obj);
 		}		
 	}
 }
