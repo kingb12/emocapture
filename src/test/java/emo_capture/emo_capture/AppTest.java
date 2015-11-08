@@ -35,7 +35,7 @@ public class AppTest extends TestCase
     
     public void testAPICall() {
     	try {
-    		System.out.print(EmoVu.makeCall("ObamaSmiling.png").keySet());
+    		System.out.print(EmoVu.makeCall("ObamaSmiling.png", 0).keySet());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

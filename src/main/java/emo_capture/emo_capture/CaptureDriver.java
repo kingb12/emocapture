@@ -17,7 +17,7 @@ public class CaptureDriver {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Map<String, Object> result = EmoVu.makeCall("activecaptures/test.png");
+		Map<String, Object> result = EmoVu.makeCall("activecaptures/test.png", 0);
 		for(Object a: result.entrySet()) {
 			System.out.println(a);
 		}

@@ -4,6 +4,8 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+import org.joda.time.Instant;
+
 /**
  * Hello world!
  *
@@ -15,6 +17,7 @@ public class App
 	private static Map<String, Object> emotiondata = null;
     public static void main( String[] args ) {
     	System.out.println("Capturing Emotion! Enter q to terminate");
+    	Instant time = Instant.now(); 
     	//The camera
     	Capture cam = new Capture();
     	int signal = 0; //default value for no significant signal
@@ -28,9 +31,10 @@ public class App
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				System.out.println("cam.writeImage() failed");
-				e.printStackTrace();
 			}
-    		emotiondata = EmoVu.makeCall(IMAGE_PATH);
+
+    		int timestamp = time.compareTo(Instant.now());
+    		emotiondata = EmoVu.makeCall(IMAGE_PATH, timestamp);
     		try {
     			try {
 					TimeUnit.MILLISECONDS.sleep(1000);
