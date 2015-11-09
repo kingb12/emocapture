@@ -23,11 +23,12 @@ public class EmoVu {
 		try {
 			response = Unirest.post("http://api.emovu.com/api/image/")
 					.header("LicenseKey", "11016217615942693089611712482576111520002601814012667106011556263176911502")
+					.field("computeAgeGroup", false)
+					.field("computeGender", false)
 					.field("imageFile", new File(imagePath))
 					.asJson();
 			Map<String, Object> result = new HashMap<String, Object>();
 			JSONArray arr = response.getBody().getArray();
-			List<?> list = new ArrayList<String>();
 			//Fills a map with values from a JSON Structure of JSONArrays + JSONObjects
 			parseJSON((Object) arr, result, null);
 			return result;

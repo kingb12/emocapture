@@ -85,63 +85,63 @@ void sendPattern(int pattern){
   if (pattern == 1)
   {
     digitalWrite(VibPins[0],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[0],LOW);
     digitalWrite(VibPins[1],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[1],LOW);
     digitalWrite(VibPins[2],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[2],LOW);
     digitalWrite(VibPins[3],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[3],LOW);
   }
   if (pattern == 2)
   {
     digitalWrite(VibPins[0],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[0],LOW);
     digitalWrite(VibPins[3],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[3],LOW);
     digitalWrite(VibPins[2],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[2],LOW);
     digitalWrite(VibPins[1],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[1],LOW);
   }
   
   if (pattern == 3)
   {
     digitalWrite(VibPins[0],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[0],LOW);
     digitalWrite(VibPins[2],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[2],LOW);
     digitalWrite(VibPins[0],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[0],LOW);
     digitalWrite(VibPins[2],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[2],LOW);
   }
   
-  if (pattern == 3)
+  if (pattern == 4)
   {
     digitalWrite(VibPins[1],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[1],LOW);
     digitalWrite(VibPins[3],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[3],LOW);
     digitalWrite(VibPins[1],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[1],LOW);
     digitalWrite(VibPins[3],HIGH);
-    delay(500); // delay for 0.5 sec
+    delay(800); // delay for 0.5 sec
     digitalWrite(VibPins[3],LOW);
   }
 }
