@@ -19,7 +19,7 @@ void setup() {
   pinMode(ledpin,OUTPUT);
 
 
-  while (!Serial);  // required for Flora & Micro
+  //while (!Serial);  // required for Flora & Micro
   delay(500);
   Serial.begin(19200);
   sendPattern(1);
@@ -71,7 +71,8 @@ void loop() {
      sendPattern(4);
      Serial.println(F("Sending pattern 4"));
    }
-   
+   memset(stringIn, '\0',sizeof(compInput));
+   compInput = 0;
 }
 
 //
